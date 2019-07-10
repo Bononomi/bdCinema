@@ -1,0 +1,17 @@
+ALTER TABLE sessao
+DROP COLUMN Assento_Sessao;
+
+alter table cliente_sessao
+add column Assento_Sessao INT(3) NOT NULL AFTER id_Filme;
+
+update cliente_sessao
+set assento_sessao = 13
+where Cliente_idcliente = 1;
+
+update cliente_sessao
+set assento_sessao = 40
+where Cliente_idcliente = 2;
+
+update cliente_sessao
+set assento_sessao = 41
+where Cliente_idcliente = 3;
