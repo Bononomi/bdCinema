@@ -1,0 +1,2 @@
+ALTER TABLE sessao
+DROP COLUMN Assento_Sessao;
